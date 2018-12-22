@@ -13,10 +13,11 @@ function render_table() {
         })
     })
 };
+render_table()
 
 // Search table render
 function filtered_table(input) {
-    tbody.html("");
+    tbody.html('');
     input.forEach((item) => {
         var row = tbody.append("tr");
         Object.entries(item).forEach(([key, value]) => {
@@ -33,4 +34,4 @@ submit.on("click", function() {
     filtered_table(filtered_data);
 });
 
-render_table();
+
